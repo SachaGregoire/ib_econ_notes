@@ -1,6 +1,6 @@
 # IB Economics Notes
 
-This repository contains IB Economics revision material for Units 2 to 4, plus helper scripts for generating economics diagrams and compiling the detailed notes into PDF.
+This repository contains IB Economics revision material for all 4 units of the curriculum, plus helper scripts for generating economics diagrams and compiling the detailed notes into PDF.
 
 ## Files
 
