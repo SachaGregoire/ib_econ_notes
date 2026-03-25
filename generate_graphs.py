@@ -20,7 +20,7 @@ import numpy as np
 import os
 
 # ── Output directory ──────────────────────────────────────────────────────────
-OUT_DIR = r'C://Users/SachaLawrenceJohnGré/Desktop/Personal/IB-Econ-Notes - Claude/graphs'
+OUT_DIR = r'C:\Users\SachaLawrenceJohnGré\Desktop\Personal\ib_econ_notes\graphs'
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ── Colour palette (edit here to restyle everything) ──────────────────────────
@@ -1662,7 +1662,6 @@ ax.plot(Q,D, color=BLUE,lw=2.2,label='D')
 ax.plot(Q,S,color=RED, lw=2.2,label='S')
 ax.plot(Q[Q>=subsidy],S_sub[Q>=subsidy],color=RED,lw=2.2,ls='--',label='S with subsidy')
 ax.axhline(Pw,color=GREEN,lw=1.8,label='World price (Pw)')
-ax.axhline(Pp,color=NAVY,lw=2,ls='--',label='Pw + subsidy')
 for Qv in [Qs_w,Qd]:
     ax.plot([Qv,Qv],[0,Pw],GRAY,lw=0.8,ls=':')
 ax.plot([Qs_s,Qs_s],[0,Pp],GRAY,lw=0.8,ls=':')
@@ -1674,7 +1673,6 @@ ax.text((Qs_s+Qd)/2,1.68,'Imports (after subsidy)',ha='center',fontsize=8.2,colo
 ax.annotate('',xy=(Qs_w,0.85),xytext=(Qd,0.85),arrowprops=dict(arrowstyle='<->',color=ORANGE,lw=2))
 ax.text((Qs_w+Qd)/2,1.02,'Imports (before subsidy)',ha='center',fontsize=8.2,color=ORANGE)
 ax.text(0.1,Pw+0.1,'Pw',fontsize=9,color=GREEN,fontweight='bold')
-ax.text(0.1,Pp+0.1,'Pw + subsidy',fontsize=8.5,color=NAVY,fontweight='bold')
 ax.text(Qs_w,0.2,'Qs',fontsize=8,color=NAVY)
 ax.text(Qs_s,0.2,"Qs'",fontsize=8,color=NAVY)
 ax.text(Qd,0.2,'Qd',fontsize=8,color=NAVY)
