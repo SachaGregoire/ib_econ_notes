@@ -1,7 +1,0 @@
-{
-  "python-envs.defaultEnvManager": "ms-python.python:system",
-  "[markdown]": {
-    "editor.defaultFormatter": null,
-    "editor.formatOnSave": false
-  }
-}
